@@ -55,5 +55,5 @@ const errorHandler = require("./middleware/errorMiddleware");
 app.use(errorHandler);
 
 app.listen(PORT, () => {
-  console.log(`Server running on ${PORT}}`);
+  console.log(`Server running on ${PORT}`);
 });
