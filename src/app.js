@@ -21,6 +21,10 @@ app.use("/api/tasks/",taskRoutes);
 const aiRoutes = require("./routes/aiRoutes");
 app.use("/api/ai",aiRoutes);
 
+app.get("/healthz",(req,res) =>{
+  res.send("Ok");
+})
+
 app.get("/", (req, res) => {
   res.send("LifeOS API Running HEY ");
 });
